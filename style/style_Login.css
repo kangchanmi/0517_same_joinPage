@@ -1,0 +1,497 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+    outline: none;
+}
+
+a                                     {text-decoration: none;}
+a:link                              {color: #333;}
+a:active                          {color: #333;}
+a:visited                         {color: #222;}
+a:hover                           {color: #222;}
+ul                                    {list-style: none;}
+img                                 {vertical-align: middle;}
+
+h1 {
+    padding: 2px 12px 2px 0;
+
+    border-bottom: 3px solid #222;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+
+    display: inline-block;
+}
+/* Reset */
+
+
+/* 가이드 라인 */
+/*div#headerBG                 {border: 1px solid #000;}*/
+/*div#wrap                         {border: 1px solid #000;}*/
+/*nav#gnb                          {border: 1px solid #000;}*/
+/*main#main                      {border: 1px solid #000;}*/
+/*#main #msShuttleFrame {border: 1px solid #000;}*/
+/*footer#footer                   {border: 1px solid #000;} */
+/*#fnb ul                             {border: 1px solid #000;}*/
+/* 가이드 라인 */
+
+
+/* 맨 위로 이동 */
+body>#topBtn {
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+
+    position: fixed;
+    top: 92%;
+    right: 2%;
+
+    z-index: 999;
+
+    display: none;
+}
+/* 맨 위로 이동 */
+
+
+
+/* 헤더 부분 */
+div#headerBG {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #fff;
+
+    position: fixed;
+    top: -20px;
+    z-index: 3;
+}
+#headerBG #header {
+    width: 1600px;
+    display: flex;
+}
+    /* 헤더 로고 */
+#headerBG #header #headerLogo {
+    width: 200px;
+    margin: 0 60px;
+    line-height: 80px;
+}
+    /* 헤더 로고 */
+
+    /* 검색창 */
+#headerBG #header #search {
+    width: 410px;
+    margin-right: 80px;
+}
+#headerBG #header #search input {
+    width: 400px;
+    height: 45px;
+    padding: 2px 2px 2px 10px;
+    margin-top: 6%;
+
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #666;
+
+    background-image: url(../images/Icon/top_search.png);
+    background-repeat: no-repeat;
+    background-position: 366px;
+}
+#headerBG #header #search input::placeholder {
+    font-size: 15px;
+    color: #454545;
+}
+#headerBG #header #search input:focus-within {
+    transition: 0.3s;
+    border-bottom: 2px solid #2dffb5;
+}
+    /* 검색창 */
+
+
+    /* GNB 메뉴 */
+#headerBG #header nav#gnb {
+    width: 370px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+#headerBG #header nav#gnb ul#mainMenu {
+    text-align: center;
+
+    display: flex;
+    position: relative;
+}
+#headerBG #header nav#gnb ul#mainMenu>li>a {
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+/*    border: 1px solid #000;*/
+    text-align: center;
+    font-weight: bold;
+
+    display: inline-block;
+}
+#headerBG #header nav#gnb li:hover a {
+    color: #2ae5a3;
+}
+#headerBG #header nav#gnb ul.subMenu {
+    display: none;
+}
+#headerBG #header nav#gnb ul.subMenu>li>a {
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+/*    border: 1px solid #000;*/
+    background-color: #fff;
+    font-weight: bold;
+
+    color: #444;
+    display: inline-block;
+    position: relative;
+}
+
+#headerBG #header nav#gnb ul.subMenu>li>a:hover {
+    background-color: #f8f8f8;
+    transition: 0.3s;
+}
+    /* GNB 메뉴 */
+
+
+    /* LNB 메뉴 */
+#headerBG #header #lnb {
+    width: 310px;
+    margin-left: 35px;
+/*    border: 1px solid #000;*/
+    display: flex;
+}
+#headerBG #header #lnb a {
+    width: 80px;
+    height: 60px;
+    margin-top: 10%;
+    margin-left: 10%;
+    line-height: 25px;
+
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    text-align: center;
+}
+#headerBG #header #lnb a:nth-child(2) {
+    padding-top: 2px;
+    margin-left: 30px;
+    display: inline-block;
+}
+#headerBG #header #lnb a:last-child {
+    padding-top: 4px;
+}
+#headerBG #header #lnb a>span {
+    width: 60px;
+    margin-top: 3px;
+    display: inline-block;
+}
+#headerBG #header #lnb a:hover>span {
+    color: #666;
+    text-decoration: underline;
+}
+    /* LNB 메뉴 */
+
+/* 헤더 부분 */
+
+
+
+
+
+/* div#wrap */
+div#wrap {
+    width: 750px;
+    margin: 165px auto;
+}
+/* div#wrap */
+
+
+
+/* div#loginArea */
+#wrap #loginArea {
+    text-align: center;
+}
+    /* 로그인 타이틀 */
+#wrap #loginArea #titleArea p {
+    margin-bottom: 20px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+}
+    /* 로그인 타이틀 */
+
+
+#loginArea #login {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+    /* 로그인배너 */
+#loginArea #login #loginBanner {
+    width: 330px;
+    padding-top: 20px;
+    margin-top: 60px;
+    text-align: left;
+
+    overflow: hidden;
+}
+#loginArea #login #loginBanner #bannerSlide {
+    width: 1020px;
+}
+#loginArea #login #loginBanner #bannerSlide a {
+    float: left;
+}
+    /* 로그인배너 */
+
+        /* 로그인 정보 입력 */
+#loginArea #login #loginInput {
+    width: 350px;
+    height: 380px;
+    padding: 18px;
+    margin-top: 60px;
+
+    border: 1px solid #bbb;
+    border-radius: 7px;
+
+    flex-wrap: wrap;
+}
+#loginArea #login #loginInput img {
+    margin: 15px 0 35px 0;
+    display: inline-block;
+}
+#loginArea #login #loginInput>#inputArea {
+    width: 265px;
+    margin: 0 auto;
+/*    border: 1px solid #000;*/
+}
+#loginArea #login #loginInput>#inputArea>input {
+    width: 255px;
+    height: 40px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #bbb;
+}
+#loginArea #login #loginInput>#inputArea>input:focus-within {
+    border: 1px solid #57ffc4;
+    transition: 0.3s;
+}
+#loginArea #login #loginInput>#inputArea>button {
+    width: 255px;
+    height: 50px;
+    margin-top: 15px;
+
+
+    border: none;
+    background-color: rgba(45, 255, 181, 0.8);
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+#loginArea #login #loginInput>#inputArea>button:hover {
+    border: 1px solid rgb(45, 255, 181, 0.4);
+    background-color: rgba(45, 255, 181, 0.5);
+}
+#loginArea #login #loginInput>#inputArea>a {
+    margin: 20px 7px;
+
+    color: #555;
+    font-size: 15px;
+    font-weight: bold;
+
+    display: inline-block;
+}
+#loginArea #login #loginInput>#inputArea>a:hover {
+    text-decoration: underline;
+}
+        /* 로그인 정보 입력 */
+
+        /* 회원가입 하기 */
+div#joinArea {
+    margin-top: 20px;
+
+    border: 1px solid #bbb;
+    border-radius: 7px;
+
+    flex-wrap: wrap;
+}
+div#joinArea>a {
+    width: 350px;
+    height: 95px;
+    padding: 18px;
+    padding: 20px;
+
+    display: inline-block;
+    display: flex;
+}
+div#joinArea a>span {
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    text-align: center;
+    background-image: url(../images/Icon/icon01.png);
+    background-repeat: no-repeat;
+    background-position: 7px 15px;
+
+    display: inline-block;
+}
+div#joinArea a>p {
+    margin-left: 15px;
+    line-height: 55px;
+    font-size: 15px;
+    color: #444;
+}
+div#joinArea a:hover>span {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: rgba(45, 255, 181, 0.7);
+    background-image: url(../images/Icon/icon01_on.png);
+    background-repeat: no-repeat;
+    background-position: 10px 15px;
+
+    display: inline-block;
+}
+div#joinArea a:hover>p {
+    text-decoration: underline;
+}
+div#joinArea a>img {
+    margin-right: 15px;
+}
+        /* 회원가입 하기 */
+/* div#loginArea */
+
+
+
+
+
+
+
+
+
+
+/* footer#footer */
+div#footerBG {
+    width: 100%;
+    margin-bottom: 60px;
+    display: inline-block;
+
+    position: relative;
+    left: 0;
+    top: 0;
+}
+footer#footer {
+    width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+    /* 푸터 GNB / copyRight */
+#footer #footerArea {
+    width: 840px;
+    padding-top: 10px;
+
+    display: inline-block;
+}
+#footer #footerArea #fnb ul {
+    display: flex;
+}
+#footer #footerArea #fnb ul a:hover {
+    text-decoration: underline;
+}
+#footer #footerArea #fnb ul a {
+    width: 150px;
+    padding: 10px 0;
+
+    color: #545454;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+/*    border: 1px solid #000;*/
+
+    display: inline-block;
+}
+#footer #footerArea #address {
+    margin-top: 20px;
+
+    line-height: 22px;
+    font-size: 14px;
+    color: #777;
+
+    display: inline-block;
+}
+    /* 푸터 GNB / copyRight */
+
+
+/* Contact Us */
+#footer #contact {
+    width: 200px;
+    margin-right: 10px;
+}
+#footer #contact h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+#footer #contact p {
+    font-size: 15px;
+    line-height: 23px;
+}
+/* Contact Us */
+
+
+    /* SNS */
+#footer #follow {
+    width: 134px;
+    margin-left: 10px;
+    text-align: center;
+}
+#footer #snsArea #snsImg {
+    padding-left: 4px;
+    display: flex;
+    justify-content: space-around;
+}
+#footer #snsArea h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+#footer #snsArea a {
+    margin-right: 11px;
+}
+    /* SNS */
+
+    /* 패밀리 사이트 */
+#footer #Maps select {
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-right: 2px;
+
+    font-size: 17px;
+}
+    /* 패밀리 사이트 */
+
+/* footer#footer */
+
+
+
+
+
+
+header, main, aside, footer {
+    display: block;
+}

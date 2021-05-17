@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style_join.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="../lib/jquery-3.6.0.min.js"></script>
+    <script src="../script/script_Join.js"></script>
+</head>
+
+<body>
+    <div id="topBtn">
+        <img src="../images/Icon/btn_prev.png" alt="맨위로가기" width="27">
+    </div>
+
+    <div id="headerBG">
+        <header id="header">
+            <div id="headerLogo">
+                <a href="../index.html">
+                    <img src="../images/headerLogo.png" alt="헤더 로고" width="200">
+                    <span></span>
+                </a>
+            </div>
+            <!--div#headerLogo-->
+
+            <div id="search">
+                <input type="text" placeholder="봄맞이 서재가구 30% 할인">
+            </div>
+
+            <nav id="gnb">
+                <ul id="mainMenu">
+                    <li>
+                        <a href="../Categories/Categories.html">카테고리</a>
+                        <ul class="subMenu">
+                            <li><a href="../Categories/Living.html">거실</a></li>
+                            <li><a href="../Categories/Kitchen.html">주방</a></li>
+                            <li><a href="../Categories/BedRoom.html">침실</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../Order/Delivery.html">주문</a>
+                        <ul class="subMenu">
+                            <li><a href="../Order/Basket.html">장바구니</a></li>
+                            <li><a href="../Order/Delivery.html">주문 조회</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="#" class="custom">고객센터</a>
+                        <ul class="subMenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> <!-- GNB 메뉴 -->
+
+            <div id="lnb">
+                <a href="../LNB/login.html">
+                    <img src="../images/Icon/login.svg" alt="로그인 아이콘" width="35" height="28">
+                    <br>
+                    <span>로그인</span>
+                </a>
+                <a href="../Order/Basket.html">
+                    <img src="../images/Icon/top_cart.png" alt="장바구니 아이콘" width="25">
+                    <br>
+                    <span>장바구니</span>
+                </a>
+                <a href="Join.html">
+                    <img src="../images/Icon/icon01.png" alt="회원가입 아이콘" width="35">
+                    <br>
+                    <span>회원가입</span>
+                </a>
+            </div> <!-- div#lnb -->
+
+        </header> <!-- header#header -->
+    </div>
+    <!--div#headerBG-->
+
+    <div id="wrap">
+        <div id="joinArea">
+            <div id="joinTitle">
+                <p>회원가입</p>
+            </div> <!-- div#joinTitle -->
+
+            <main id="main">
+
+
+                <div id="infoArea">
+                    <span><input type="text" placeholder="이름" id="uName"></span>
+                    <span><input type="text" placeholder="아이디" id="uID"></span>
+                    <span><input type="password" placeholder="비밀번호" class="PW" id="uPW"></span>
+                    <span><input type="password" placeholder="비밀번호 확인" class="PW" id="uPW_Re"></span>
+                    <span><input type="text" placeholder="이메일" id="Mail"></span>
+                    <span>
+                        <b id="day">
+                            <select>
+                                <option>1970</option>
+                                <option>2021</option>
+                            </select>
+                            <select>
+                                <option>월</option>
+                                <option>4월</option>
+                            </select>
+                            <select>
+                                <option>일</option>
+                                <option>6일</option>
+                            </select>
+                        </b>
+                        <!--div#day-->
+                    </span>
+                    <span><input type="radio" class="radio" name="gender"> 남 &nbsp; <input type="radio" class="radio" checked name="gender"> 여</span>
+                    <span class="certified">
+                        <input type="text" placeholder="휴대폰 번호" class="joinTxt">
+                        <button type="button">인증</button>
+                    </span>
+                    <span class="certified">
+                        <input type="text" placeholder="SMS 인증번호" class="joinTxt">
+                        <button type="button">확인</button>
+                    </span>
+                </div>
+                <!--div#infoArea-->
+            </main>
+            <!--main#main-->
+
+            <aside id="aside">
+                <h4>이용약관</h4>
+                <iframe src="source/membership.html" frameborder="0"></iframe>
+
+                <input type="checkbox" class="joinTxt"> <span>14세 이상입니다. (필수)</span>
+                <p>* 회원가입에 필요한 최소한의 정보만 입력 받음으로써 고객님의 개인정보 수정을 최소화하고</p>
+                <p>&nbsp;&nbsp;편리한 회원가입을 제공합니다.</p>
+
+                <div id="agreeArea">
+                    <div id="allAgree">
+                        <input type="checkbox" id="allAgreeChk"> 전체동의
+                    </div>
+                    <!--div#allAgree-->
+                    <div id="agree">
+                        <div id="agree1">
+                            <input type="checkbox" id="chk1" class="check"> 이용약관
+                            <button type="button">내용보기</button>
+                            <input type="checkbox" id="chk2" class="check"> 개인정보 수집 및 이용안내
+                            <button type="button">내용보기</button>
+                        </div>
+                        <!--div#agree1-->
+                        <br>
+                        <div id="agree2">
+                            <input type="checkbox" id="chk3" class="check"> 개인정보 제3자 제공
+                            <button type="button">내용보기</button>
+                            <input type="checkbox" id="chk4" class="check"> 개인정보 처리위탁
+                            <button type="button">내용보기</button>
+                        </div>
+                        <!--div#agree2-->
+                    </div>
+                    <!--div#agree-->
+                </div>
+                <!--div#agreeArea-->
+            </aside>
+            <!--aside#aside-->
+
+            <button id="Join" type="submit">동의하고 가입완료</button>
+
+        </div> <!-- div#joinArea -->
+
+    </div>
+    <!--div#wrap-->
+
+
+
+
+
+    <div id="footerBG">
+        <footer id="footer">
+
+            <div id="footerArea">
+                <nav id="fnb">
+                    <ul>
+                        <li><a href="../index.html">홈</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="../FNB/siteMap.html">사이트맵</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="../Customer/source/membership.html">이용약관</a></li>
+                    </ul>
+                </nav> <!-- nav#fnb -->
+
+                <div id="address">
+                    COMPANY : (주)세임가구 I OWNER : 강일선 I BUSINESS LICENSE : 145-81-66149 I MAIL ORDER
+                    LICENSE : 2012-부천원미-00692호
+                    <br>
+                    ADDRESS : 경기도 부천시 원미구 중동로 29 (런어웨이타워) 104호
+                    <br>
+                    CALL CENTER : 1641-8324 I FAX : 032-715-0869
+                    <br>
+                    ©Samefurniture.co.kr ALL RIGHTS RESERVED. 호스팅제공 : 케이씨엠(주)
+                </div> <!-- div#address -->
+
+            </div> <!-- div#footContent -->
+
+
+            <div id="contact">
+                <h1>Contact Us</h1>
+                <p><b>고객센터</b></p>
+                <p>1845-1952</p>
+                <p><b>평일</b> 09:00 ~ 17:00</p>
+                <p><b>점심</b> 12:00 ~ 13:00</p>
+            </div> <!-- div#contact -->
+
+
+            <div id="follow">
+                <div id="snsArea">
+                    <h1>Follow Us</h1>
+                    <div id="snsImg">
+                        <a href="https://www.facebook.com/"><img src="../images/Icon/icon-fb.svg" alt="페이스북이미지" width="36"></a>
+                        <a href="https://www.instagram.com/"><img src="../images/Icon/icon-ig.svg" alt="인스타이미지" width="36"></a>
+                        <a href="https://www.youtube.com/"><img src="../images/Icon/icon-yt.svg" alt="유튜브이미지" width="36"></a>
+                    </div>
+                </div> <!-- div#snsArea -->
+
+                <div id="Maps">
+                    <select>
+                        <option>Brand Site</option>
+                        <option>furniture</option>
+                        <option>Same</option>
+                    </select>
+                </div> <!-- div#Maps -->
+            </div> <!-- div#folloew -->
+        </footer> <!-- footer#footer -->
+    </div>
+    <!-- div#footerBG -->
+
+
+</body></html>
